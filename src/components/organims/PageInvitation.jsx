@@ -24,7 +24,7 @@ const PageInvitation = () => {
         </p>
 
         <p className="border-y border-primary border-opacity-30 w-48 text-center py-2 mt-5 font-semibold">
-          {name || "hamba Allah"}
+          {name || "Hamba Allah"}
         </p>
 
         <Button title={"Open Invitation"} handleClick={() => setIsToogle(true)} />

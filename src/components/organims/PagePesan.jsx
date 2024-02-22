@@ -40,8 +40,8 @@ const PagePesan = () => {
     const api = import.meta.env.VITE_MOCK_API;
 
     const newData = {
-      name: username === "Hamba Allah" ? "Hamba Allah" : username,
-      pesan: username === "Hamba Allah" ? "<span className='text-red-500'>Pesan Di Gagal</span>" : formData.pesan,
+      name: username || "Hamba Allah",
+      pesan: formData.pesan,
     };
 
     try {
@@ -85,11 +85,13 @@ const PagePesan = () => {
         </form>
 
         <div className="w-full ml-5 h-[200px] flex justify-center self-center mt-5 overflow-x-hidden overflow-y-scroll py-5 scroll-smooth relative scrollbar-hide">
-          <div className="flex flex-col gap-5 mr-5" >
-            {datas.map((data) =>
-              <CardPesan key={data.id} data={data} /> 
-            )}
-          </div>
+        <div className="flex flex-col gap-5 mr-5">
+          {username !== "Hamba Allah" && 
+            datas.map((data) => (
+              <CardPesan key={data.id} data={data} />
+            ))
+          }
+        </div>
         </div>
 
         <Footer />
