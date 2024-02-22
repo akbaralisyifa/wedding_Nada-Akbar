@@ -52,6 +52,7 @@ const PagePesan = () => {
       setFormData(initialValue);
     } catch (error) {
       console.error("Error submitting data:", error);
+      setFormData(initialValue);
     }
 
     setIsLoading(false);
