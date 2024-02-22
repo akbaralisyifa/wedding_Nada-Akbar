@@ -40,9 +40,9 @@ const PagePesan = () => {
     const api = import.meta.env.VITE_MOCK_API;
 
     const newData = {
-      name: username ||'Hamba Allah',
-      pesan: formData.pesan
-    }
+      name: username === "Hamba Allah" ? "Hamba Allah" : username,
+      pesan: username === "Hamba Allah" ? "" : formData.pesan,
+    };
 
     try {
       const response = await axios.post(api, newData);
@@ -51,7 +51,7 @@ const PagePesan = () => {
       setDatas((prevData) => [newPost, ...prevData]);
       setFormData(initialValue);
     } catch (error) {
-      console.log(error);
+      console.error("Error submitting data:", error);
     }
 
     setIsLoading(false);
