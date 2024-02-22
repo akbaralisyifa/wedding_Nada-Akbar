@@ -41,7 +41,7 @@ const PagePesan = () => {
 
     const newData = {
       name: username === "Hamba Allah" ? "Hamba Allah" : username,
-      pesan: username === "Hamba Allah" ? "" : formData.pesan,
+      pesan: username === "Hamba Allah" ? "<span className='text-red-500'>Pesan Di Gagal</span>" : formData.pesan,
     };
 
     try {
