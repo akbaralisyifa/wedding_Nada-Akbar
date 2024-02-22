@@ -1,4 +1,5 @@
 
+import { BG1 } from "../../assets";
 import BackgroundImage from "../atoms/BackgroundImage";
 import Button from "../atoms/Button";
 import Layout from "../atoms/Layout";
@@ -42,7 +43,7 @@ const PageDate = () => {
 
   return (
     <>
-      <BackgroundImage bg={"bg1.png"} />
+      <BackgroundImage bg={BG1} />
     <main id="PageDate" className="">
       <Layout>
         <h1 className="font-playfair uppercase text-primary w-48 mt-20 font-light text-2xl text-center">

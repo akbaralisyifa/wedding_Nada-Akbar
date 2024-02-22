@@ -1,34 +1,30 @@
-import IconDate from "../src/assets/iconDate.png";
-import IconSurah from "../src/assets/iconSurah.png";
-import IconMempelai from "../src/assets/iconMempelai.png";
-import IconLocation from "../src/assets/iconLocation.png";
-import IconHadiah from "../src/assets/iconHadiah.png";
-import IconPesan from "../src/assets/iconPesan.png";
+import { ICONDATE, ICONHADIAH, ICONLOCATION, ICONMEMPELAI, ICONPESAN, ICONSURAH } from "./assets";
+
 
 const DatasNav = [
   {
     path: "#PageDate",
-    name: IconDate,
+    name: ICONDATE,
   },
   {
     path: "#PageSurah",
-    name: IconSurah,
+    name: ICONSURAH,
   },
   {
     path: "#PageMempelai",
-    name: IconMempelai,
+    name: ICONMEMPELAI,
   },
   {
     path: "#PageLocation",
-    name: IconLocation,
+    name: ICONLOCATION,
   },
   {
     path: "#PagePayment",
-    name: IconHadiah,
+    name: ICONHADIAH,
   },
   {
     path: "#PagePesan",
-    name: IconPesan,
+    name: ICONPESAN,
   }
 ];
 

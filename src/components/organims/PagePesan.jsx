@@ -7,6 +7,7 @@ import { Toogle } from "../../context/ToogleContext";
 import CardPesan from "../molecules/CardPesan";
 import axios from "axios";
 import Footer from "../atoms/Footer";
+import { BG3 } from "../../assets";
 
 
 const initialValue = {
@@ -58,7 +59,7 @@ const PagePesan = () => {
 
   return (
     <>
-        <BackgroundImage bg={"bg3.png"} />
+        <BackgroundImage bg={BG3} />
         <main id="PagePesan" className="mt-20 pt-20 pb-24">
 
         <Layout>

@@ -4,6 +4,7 @@ import TextMolecules from "../molecules/TextMolecules";
 import Layout from "../atoms/Layout";
 import  {Toogle} from "../../context/ToogleContext";
 import Button from '../atoms/Button';
+import { BG } from '../../assets';
 
 const PageInvitation = () => {
   const {isToogle, setIsToogle} = useContext(Toogle);
@@ -11,7 +12,7 @@ const PageInvitation = () => {
 
   return (
     <div className={`fixed w-full h-screen z-20 ${isToogle && "-translate-y-[1000px] transition duration-1000 ease-in-out"}`}>
-      <BackgroundImage bg={"bg.png"} />
+      <BackgroundImage bg={BG} />
       <Layout>
         <h1 className="uppercase text-primary w-48 mt-16 font-light text-xl text-center font-alice ">
           you are invIte to the wedding of

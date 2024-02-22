@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const BackgroundImage = ({bg}) => {
   return (
     <img
-      src={`../src/assets/${bg}`}
+      src={bg}
       alt="background"
       className="min-w-full min-h-screen absolute -z-10"
     />

@@ -1,3 +1,4 @@
+import { BG3 } from "../../assets"
 import BackgroundImage from "../atoms/BackgroundImage"
 import Button from "../atoms/Button"
 import Image from "../atoms/Image"
@@ -6,7 +7,7 @@ import GrupTextLocation from "../molecules/GrupTextLocation"
 const PageLocation = () => {
   return (
     <>
-    <BackgroundImage bg={"bg3.png"} />
+    <BackgroundImage bg={BG3} />
     <main id="PageLocation" className="mt-20">
         <Layout>
             <Image image="house.png"/>

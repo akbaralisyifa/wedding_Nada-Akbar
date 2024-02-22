@@ -2,7 +2,7 @@ import propTypes from 'prop-types'
 
 const Image = ({image, style}) => {
   return (
-    <img className={style && style} src={`../../../src/assets/${image}`} alt="" />
+    <img className={style && style} src={image} alt="" />
   )
 }
 
