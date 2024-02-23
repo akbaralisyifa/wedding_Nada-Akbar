@@ -11,6 +11,7 @@ import PageSurah from "./components/organims/PageSurah";
 import PageMempelaiLaki from "./components/organims/pageMempelaiLaki";
 import { Toogle } from "./context/ToogleContext";
 import song from '../src/assets/song.mp3'
+import PagePaymentSP from "./components/organims/PagePaymentSP";
 
 function App() {
 const {isToogle} = useContext(Toogle);
@@ -19,10 +20,9 @@ useEffect(() => {
   const audioElement = document.querySelector("#audioPlayer");
 
   if(audioElement){
-    isToogle ? audioElement.play() : audioElement.pause()
+    isToogle && audioElement.play()
   }
-
-}, [isToogle])
+}, [isToogle]);
   return (
    <>
    <Navbar />
@@ -33,6 +33,7 @@ useEffect(() => {
     <PageMempelaiLaki />
     <PageLocation />
     <PagePayment />
+    <PagePaymentSP />
     <PagePesan />
 
     {/* bottom-28 z-10 */}

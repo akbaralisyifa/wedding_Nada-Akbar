@@ -8,13 +8,13 @@ const PageSurah = () => {
   return (
     <>
         <BackgroundImage bg={BG2} />
-        <main id="PageSurah" className="pt-20 mb-20">
+        <main id="PageSurah" className="pt-20 mb-10">
         <Layout>
             <Image image={BISMILLAH}/>
 
             <p className="my-5">---------------------------</p>
 
-            <Image image={SURAH}/>
+            <Image image={SURAH} style={"w-[400px]"}/>
             <p className="my-5">---------------------------</p>
 
             <blockquote className="px-4 text-sm font-medium italic text-center font-montserrat"> Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</blockquote>

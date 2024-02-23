@@ -29,9 +29,21 @@ const ToogleContextProvider = ({ children }) => {
     }
   }
 
+
+  // Bagian Copy Nomor
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        alert("Nomor berhasil disalin ke clipboard!");
+      })
+      .catch((err) => {
+        console.error('Gagal menyalin ke clipboard', err);
+      });
+  };
+
   return (
     // Memberikan nilai state dan fungsi untuk memperbarui state sebagai nilai context
-    <ToogleContext.Provider value={{ isToogle, setIsToogle, name, datas, setDatas}}>
+    <ToogleContext.Provider value={{ isToogle, setIsToogle, name, datas, setDatas, copyToClipboard}}>
       {children}
     </ToogleContext.Provider>
   );

@@ -1,4 +1,4 @@
-import { BG3 } from "../../assets"
+import { BG3, HOUSE } from "../../assets"
 import BackgroundImage from "../atoms/BackgroundImage"
 import Button from "../atoms/Button"
 import Image from "../atoms/Image"
@@ -10,7 +10,7 @@ const PageLocation = () => {
     <BackgroundImage bg={BG3} />
     <main id="PageLocation" className="mt-20">
         <Layout>
-            <Image image="house.png"/>
+            <Image image={HOUSE}/>
             <p className="mt-5 text-center px-5 font-montserrat">
             Dengan segala kerendahan hati kami berharap kehadiran bapak/ibu/saudara/i pada pernikahan anak kami yang akan kami diselenggarakan pada :
             </p>

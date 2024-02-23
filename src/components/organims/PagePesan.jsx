@@ -7,7 +7,7 @@ import { Toogle } from "../../context/ToogleContext";
 import CardPesan from "../molecules/CardPesan";
 import axios from "axios";
 import Footer from "../atoms/Footer";
-import { BG3 } from "../../assets";
+import { BG2, BG3 } from "../../assets";
 
 
 const initialValue = {
@@ -41,7 +41,7 @@ const PagePesan = () => {
 
     const newData = {
       name: username || "Hamba Allah",
-      pesan: formData.pesan,
+      pesan: username === "Hamba Allah" ? "Pesan Error" : formData.pesan,
     };
 
     try {
@@ -60,8 +60,8 @@ const PagePesan = () => {
 
   return (
     <>
-        <BackgroundImage bg={BG3} />
-        <main id="PagePesan" className="mt-20 pt-20 pb-24">
+        <BackgroundImage bg={BG2} />
+        <main id="PagePesan" className="mt-20">
 
         <Layout>
         <TextBase title={"Kirim Ucapan"} style={"text-2xl mt-5 font-semibold"} />
