@@ -39,9 +39,11 @@ const PagePesan = () => {
 
     const api = import.meta.env.VITE_MOCK_API;
 
+    const nameHambaTuhan = "Hamba Allah";
+
     const newData = {
-      name: username || "Hamba Allah",
-      pesan: username === "Hamba Allah" ? "Pesan Error" : formData.pesan,
+      name: username.toLowerCase() || nameHambaTuhan.toLowerCase(),
+      pesan: username.toLowerCase() === nameHambaTuhan.toLowerCase() ? "Pesan Error" : formData.pesan,
     };
 
     try {
