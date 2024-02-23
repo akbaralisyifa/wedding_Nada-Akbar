@@ -8,7 +8,7 @@ const PageLocation = () => {
   return (
     <>
     <BackgroundImage bg={BG3} />
-    <main id="PageLocation" className="mt-20">
+    <main id="PageLocation" className="-mb-12">
         <Layout>
             <Image image={HOUSE}/>
             <p className="mt-5 text-center px-5 font-montserrat">

@@ -19,7 +19,6 @@ const PagePaymentSP = () => {
             <TextName title={"zuhror"} style={"mt-1"} />
             <p className="font-semibold font-alice mt-4 text-2xl">089668768387</p>
             <Button title={"Copy nomor"} style={"my-5"} handleClick={() => copyToClipboard("089668768387")} />
-
             </Layout>
         </main>
     </>

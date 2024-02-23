@@ -8,7 +8,7 @@ const PageMempelai = () => {
   return (
     <>
     <BackgroundImage bg={BG3} />
-    <main id="PageMempelai" className="mb-14">
+    <main id="PageMempelai" className="">
         <Layout>
             <Image image={BISMILAHSMALL} style={"w-[300px] pt-10"} />
             <p className="mt-10 text-center px-5 font-montserrat">Dengan memohon rahmat dan ridho allah Subhanahu Wa Ta’ala, insyaallah kami akan menyelenggarakan acara pernikahan anak kami :</p>

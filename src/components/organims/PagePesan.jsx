@@ -7,7 +7,7 @@ import { Toogle } from "../../context/ToogleContext";
 import CardPesan from "../molecules/CardPesan";
 import axios from "axios";
 import Footer from "../atoms/Footer";
-import { BG2, BG3 } from "../../assets";
+import { BG2 } from "../../assets";
 
 
 const initialValue = {

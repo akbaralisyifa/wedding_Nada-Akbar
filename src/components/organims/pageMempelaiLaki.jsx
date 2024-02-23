@@ -8,7 +8,7 @@ const PageMempelaiLaki = () => {
   return (
     <>
     <BackgroundImage bg={BG2} />
-    <main className="mt-20 mb-40">
+    <main className="mt-20 mb-20">
         <Layout>
             <Image image={AKBAR} style={"w-[250px]"} />
 
