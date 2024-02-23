@@ -76,7 +76,7 @@ const PageDate = () => {
         <TextBase title={"Sabtu. 02 maret 2024"} span={<span className="block">10.00 - 14.00</span>} />
         <TextBase title={"Saung bambu"} span={<span className="block">cikeruh</span>} />
 
-        <Button title={"Save Date"} handleClick={() => window.open('https://calendar.google.com/calendar/u/0/r/day/2024/3/2') } />
+        <Button title={"Save The Date"} handleClick={() => window.open('https://calendar.google.com/calendar/u/0/r/day/2024/3/2') } />
       </Layout>
     </main>
     
